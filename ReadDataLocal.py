@@ -29,8 +29,6 @@ def get_training_data(data_dir):
 # Download latest version
 path = kagglehub.dataset_download("paultimothymooney/chest-xray-pneumonia")
 
-print("Path to dataset files:", path)
-
 for dirname, _, filenames in os.walk('/kaggle/input/chest-xray-pneumonia'):
     for filename in filenames:
         print(os.path.join(dirname, filename))
